@@ -1,4 +1,4 @@
-# ggrepel worked vignette example
+
 
 
 library(ggplot2)
@@ -7,7 +7,6 @@ library(ggrepel)
 # Built-in dataset
 data(mtcars)
 
-# Add car names as a column
 mtcars$car_name <- rownames(mtcars)
 
 # Basic ggplot2 labels
