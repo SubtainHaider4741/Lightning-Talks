@@ -1,0 +1,42 @@
+
+---
+
+## File 2: `ggrepel_vignette_example.R`
+
+Paste this into a new file named `ggrepel_vignette_example.R`:
+
+```r
+# ggrepel worked vignette example
+# This example follows the basic idea from the ggrepel documentation:
+# compare normal ggplot2 text labels with ggrepel labels.
+
+library(ggplot2)
+library(ggrepel)
+
+# Built-in dataset
+data(mtcars)
+
+# Add car names as a column
+mtcars$car_name <- rownames(mtcars)
+
+# Basic ggplot2 labels
+ggplot(mtcars, aes(x = wt, y = mpg, label = car_name)) +
+  geom_point() +
+  geom_text() +
+  labs(
+    title = "Car Weight vs Miles Per Gallon",
+    subtitle = "Using regular geom_text()",
+    x = "Weight",
+    y = "Miles per gallon"
+  )
+
+# Improved labels with ggrepel
+ggplot(mtcars, aes(x = wt, y = mpg, label = car_name)) +
+  geom_point() +
+  geom_text_repel() +
+  labs(
+    title = "Car Weight vs Miles Per Gallon",
+    subtitle = "Using geom_text_repel() from ggrepel",
+    x = "Weight",
+    y = "Miles per gallon"
+  )
