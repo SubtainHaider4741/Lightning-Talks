@@ -1,5 +1,4 @@
-# My new worked example using ggrepel
-# This example uses the mpg dataset from ggplot2.
+
 
 library(ggplot2)
 library(ggrepel)
@@ -52,3 +51,4 @@ ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
     y = "Highway miles per gallon",
     color = "Vehicle class"
   )
+
