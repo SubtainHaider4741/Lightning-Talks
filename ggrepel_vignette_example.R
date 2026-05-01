@@ -1,14 +1,5 @@
-
----
-
-## File 2: `ggrepel_vignette_example.R`
-
-Paste this into a new file named `ggrepel_vignette_example.R`:
-
-```r
 # ggrepel worked vignette example
-# This example follows the basic idea from the ggrepel documentation:
-# compare normal ggplot2 text labels with ggrepel labels.
+
 
 library(ggplot2)
 library(ggrepel)
@@ -40,3 +31,5 @@ ggplot(mtcars, aes(x = wt, y = mpg, label = car_name)) +
     x = "Weight",
     y = "Miles per gallon"
   )
+
+
