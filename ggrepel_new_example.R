@@ -6,8 +6,7 @@ library(ggrepel)
 # Built-in dataset
 data(mpg)
 
-# Create a smaller dataset with selected cars to label.
-# These are cars with high highway mileage or unusual engine size.
+
 cars_to_label <- subset(mpg, hwy >= 40 | displ >= 6)
 
 # Scatterplot without labels
