@@ -1,8 +1,6 @@
 # ggrepel Lightning Talk
 
-This repository contains the code for my 10-minute lightning talk on the `ggrepel` package in R.
-
-## Topic
+# Topic
 
 The topic of this presentation is `ggrepel`, an R package that improves text labels in `ggplot2` graphs. It helps avoid overlapping labels, which makes plots easier to read and present.
 
